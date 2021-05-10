@@ -2,23 +2,23 @@
 #include<string.h>
 int main()
 {
-char str[100];
-int c1=0,i;
+char sentence[100];
+int char_count=0,i;
 int w=0;
 
 printf("enter the string:");
-gets(str);
+gets(sentence);
 
-for(i=0;str[i]!='\0';i++)
+for(i=0;sentence[i]!='\0';i++)
 {
-c1++;
+char_count++;
 
-	if(str[i]==' ')
+	if(sentence[i]==' ')
 		{
 			w++;
 		}
 
 }
-     printf(" the number of character and words are %d and %d",c1,w+1);
+     printf(" the number of character and words are %d and %d",char_count,w+1);
  return 0;
 }
